@@ -52,10 +52,9 @@ MIDDLEWARE = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'web_project.urls'
-STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),
-        os.path.join(BASE_DIR, 'hello\\templetes'),
-    ]
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),        
+    )
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello\\templates\\pages'),)
 TEMPLATES = [
     {
