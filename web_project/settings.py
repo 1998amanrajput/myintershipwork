@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Build paths inside the project like this: os.path.join(PROJECT_ROOT, ...)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -51,14 +51,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'web_project.urls'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'hello\\templetes'),
+    os.path.join(PROJECT_ROOT, 'hello\\templetes'),
 ]
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello\\templates\\pages'),)
+TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, 'hello\\templates\\pages'),)
 TEMPLATES = [
     {
         #D:\dev\dataStructure\DS\hello_world\web_project\hello\templetes
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'hello\\templetes\\pages')],
+        'DIRS': [os.path.join(PROJECT_ROOT, 'hello\\templetes\\pages')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'web_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
     }
 }
 
@@ -132,3 +132,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
