@@ -30,15 +30,17 @@ class Calculator(View):
         return render(request,"calculator.html")
 
 
-class Json(View):
-    def get(self, request, *args, **kwargs):
+
+def Json( request):
         context={'message':'Json Project'}
-        return render(request,"json.html")
+        return render(request,"json.html",context=context)
+
 
 class StoreData(View):
     def get(self, request, *args, **kwargs):
         context={'message':'Store Information'}
         return render(request,"datamanagment.html")
+
 
 def Nothing(request):
     return HttpResponse("This Site has nothing")
