@@ -31,9 +31,9 @@ class Calculator(View):
 
 
 
-def Json( request):
+def Json(request):
         context={'message':'Json Project'}
-        return render(request,"json.html",context=context)
+        return HttpResponse(render(request,"json.html",context=context))
 
 
 class StoreData(View):
