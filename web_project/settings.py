@@ -47,12 +47,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'web_project.urls'
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'hello\\templetes'),
-]
+        os.path.join(PROJECT_ROOT, 'static'),
+        os.path.join(PROJECT_ROOT, 'hello\\templetes'),
+    ]
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, 'hello\\templates\\pages'),)
 TEMPLATES = [
     {
