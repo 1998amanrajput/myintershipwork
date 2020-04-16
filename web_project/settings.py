@@ -25,7 +25,7 @@ SECRET_KEY = '-%0_l2$%&%k*$-b#n4_^eh+=#7&zcwy1l+a%!v96m=yu*ju&ns'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://myinternshipwork.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -113,6 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 #env start
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 SESSION_COOKIE_SECURE=True
 CSRF_COOKIE_SECURE=True
 SECURE_HSTS_SECONDS = 1
@@ -135,4 +136,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
