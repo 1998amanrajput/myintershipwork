@@ -8,6 +8,6 @@ urlpatterns = [
      path("calculator/", views.Calculator.as_view(), name="calculator"),
      path("Json/", views.Json.as_view(), name="Json_Project"),
      path("CRUD/", views.StoreData.as_view(), name="StoreData"),
-     path("/", views.Home.as_view(), name="home"),
+     path("", views.Home.as_view(), name="home"),
    
 ]
