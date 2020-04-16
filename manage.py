@@ -2,6 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from web_project.settings import ALLOWED_HOSTS
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
-    execute_from_command_line(sys.argv)
+    execute_from_command_line(ALLOWED_HOSTS)
 
 
 if __name__ == '__main__':
