@@ -53,16 +53,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'web_project.urls'
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello/templates/pages'),)
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello/templates'),)
 
 TEMPLATES = [
     {
         #D:\dev\dataStructure\DS\hello_world\web_project\hello\templetes
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/pages'),
-                os.path.join(BASE_DIR, 'hello/templetes/css'),
-                os.path.join(BASE_DIR, 'hello/templetes/javascript'),
-                os.path.join(BASE_DIR, 'hello/templetes/img')],
+        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes'),
+                    ],
 
         'APP_DIRS': True,
         'OPTIONS': {
@@ -120,9 +118,10 @@ STATIC_URL = '/static/'
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
 os.makedirs(STATIC_TMP, exist_ok=True)
 os.makedirs(STATIC_ROOT, exist_ok=True)
+
 STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, '../apps/core/static'),  
-        )
+        os.path.join(BASE_DIR, 'static'),  
+    )
 
 
 SESSION_COOKIE_SECURE=True
