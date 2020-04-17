@@ -60,6 +60,9 @@ TEMPLATES = [
         #D:\dev\dataStructure\DS\hello_world\web_project\hello\templetes
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/pages')],
+        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/css')],
+        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/javascript')],
+        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/img')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
