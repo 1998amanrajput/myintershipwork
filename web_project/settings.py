@@ -53,7 +53,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'web_project.urls'
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello/templates'),)
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello/templates/pages'),)
 
 TEMPLATES = [
     {
