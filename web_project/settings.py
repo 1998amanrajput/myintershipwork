@@ -59,7 +59,7 @@ TEMPLATES = [
     {
         #D:\dev\dataStructure\DS\hello_world\web_project\hello\templetes
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes'),
+        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/pages'),
                     ],
 
         'APP_DIRS': True,
