@@ -30,11 +30,10 @@ class Calculator(View):
         return render(request,"calculator.html")
 
 
-
-def Json(request):
+class Json(View):
+    def get(self, request, *args, **kwargs):
         context={'message':'Json Project'}
-        return HttpResponse(render(request,"json.html",context=context))
-
+        return render(request,"json.html",context=context)
 
 class StoreData(View):
     def get(self, request, *args, **kwargs):

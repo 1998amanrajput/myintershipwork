@@ -24,7 +24,7 @@ SECRET_KEY = '-%0_l2$%&%k*$-b#n4_^eh+=#7&zcwy1l+a%!v96m=yu*ju&ns'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+DEBUG_PROPAGATE_EXCEPTIONS = True
 ALLOWED_HOSTS = ['myinternshipwork.herokuapp.com']
 
 
@@ -54,6 +54,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ROOT_URLCONF = 'web_project.urls'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello\\templates\\pages'),)
+
 TEMPLATES = [
     {
         #D:\dev\dataStructure\DS\hello_world\web_project\hello\templetes
@@ -116,7 +117,8 @@ os.makedirs(STATIC_TMP, exist_ok=True)
 os.makedirs(STATIC_ROOT, exist_ok=True)
 
 STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),        
+        os.path.join(BASE_DIR, 'static'),   
+             
     )
 
 
