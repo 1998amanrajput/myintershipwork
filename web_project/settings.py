@@ -53,13 +53,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'web_project.urls'
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello\\templates\\pages'),)
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'hello/templates/pages'),)
 
 TEMPLATES = [
     {
         #D:\dev\dataStructure\DS\hello_world\web_project\hello\templetes
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'hello\\templetes\\pages')],
+        'DIRS': [os.path.join(BASE_DIR, 'hello/templetes/pages')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
