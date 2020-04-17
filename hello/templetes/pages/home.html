@@ -57,7 +57,9 @@
           <div class="card shadow effect">
             <!-- calculator page with html and css ,js -->
             
-          <a href="calculator/">  <img src="{%load static 'img/calculator/calculator.jpg' %}" class="card-img-top" alt="..."></a>
+          <a href="calculator/">  
+            {%load static %}
+            <img src="{%static 'img/calculator/calculator.jpg' %}" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h5 class="card-title">Calculator</h5>
               <p class="card-text">This a Calculator you can perfrom calculation on it.It is made in html css and javascript.</p>
@@ -68,7 +70,9 @@
           <div class="card shadow effect">
             <!-- Json page  with html and css ,bootstrap ,js ,ajax -->
             
-          <a href="Json/">  <img src="{% load static 'img/Json/json_project.jpg' %}" class="card-img-top" alt="..."></a>
+          <a href="Json/">  
+            {%load static %}
+            <img src="{%static 'img/Json/json_project.jpg' %}" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h5 class="card-title">JSON PROJECT</h5>
               <p class="card-text"><b>JSON PROJECT :</b>This was a Small project to Demonstrate the Exchange of data of internet we need to get data from a resp api and manipulate data Into a Table. </p>
@@ -79,7 +83,9 @@
         <div class="col mb-4">
           <div class="card shadow effect">
             
-          <a href="CRUD/">  <img src="{%load static 'img/DataManagment/DataManagment.jpg' %}" class="card-img-top" alt="..."></a>
+          <a href="CRUD/"> 
+            {%load static %}
+            <img src="{%static 'img/DataManagment/DataManagment.jpg' %}" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h5 class="card-title">In Browser Data Management</h5>
               <p class="card-text">This Page Store your Information and show it in table Without using any Database.Even after you refresh the page .</p>
