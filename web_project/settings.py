@@ -116,17 +116,13 @@ LANGUAGE_CODE = 'en-us'
 
 #env start
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
 os.makedirs(STATIC_TMP, exist_ok=True)
 os.makedirs(STATIC_ROOT, exist_ok=True)
-
-STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),  
-        os.path.join(BASE_DIR, 'hello/templetes/pages'),
-        os.path.join(BASE_DIR, 'hello/templetes/css'),
-        os.path.join(BASE_DIR, 'hello/templetes/javascript'),
-        os.path.join(BASE_DIR, 'hello/templetes/img')
-    ]
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, '../apps/core/static'),  
+        )
 
 
 SESSION_COOKIE_SECURE=True
@@ -149,6 +145,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 django_heroku.settings(locals())
