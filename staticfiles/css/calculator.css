@@ -1,0 +1,15 @@
+body{
+    background-color:rgba(0,0,0,0.3);
+}
+input{
+    background-color: rgba(0,0,0,0.3);
+    height: 80px;
+    width:150px;
+    margin-left:20px ;
+    margin-right:20px ;
+    margin-bottom:20px ;
+    border-radius: 20%;
+    border: none;
+    color:white;
+    font-size: 1.9rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+{%load static %}
+<link rel="stylesheet" href="{%static '/css/calculator.css'%}">
+
+<script src="{%static 'javascript/calculator/calculator.js'%}"></script>
+<title>Calculator</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-3" id="display">Nothing Here!</h1>
+                        <p id="result">Nothing Here!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 offset-md-1 mx-auto">
+                <input type="button" onclick="Data('1')" value=1>
+                <input type="button" onclick="Data('2')" value=2>
+                <input type="button" onclick="Data('3')" value=3>
+                <input type="button" onclick="Data('4')" value=4>
+                <input type="button" onclick="cencel()" value="X"><br>
+                <input type="button" onclick="Data('5')" value=5>
+                <input type="button" onclick="Data('6')" value=6>
+                <input type="button" onclick="Data('7')" value=7>
+                <input type="button" onclick="Data('8')" value=8><br>
+                <input type="button" onclick="Data('9')" value=9>
+                <input type="button" onclick="Data('0')" value=0>
+                <input type="button" onclick="Data('+')" value='+'>
+                <input type="button" onclick="Data('-')" value='-'><br>
+                <input type="button" onclick="Data('*')" value='*'>
+                <input type="button" onclick="Data('/')" value='/'>
+                <input type="button" onclick="calculate()" value='='>
+                <input type="button" onclick="clean()" value='C'>
+                
+            </div>
+        </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

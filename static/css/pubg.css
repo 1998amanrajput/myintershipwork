@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+div.topnav {
+    overflow: hidden;
+    background-color: #333;
+    margin-top: -10px;
+    padding-top: -20px;
+
+    position: top;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover{
+      background-color: green;
+  }
+body{
+    font-family: 'Tajawal', sans-serif;
+    background-image: url('../img/pubg/pubgback.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+div{
+    width: 100%;
+    margin-top: 40px;
+}
+div.bbg{
+    margin:0px ;
+    padding: 0px;
+}
+.input{
+    width: 450px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+
+    color:  rgb(252, 194, 5);
+}
+.input:hover{
+    border-bottom: 3px solid rgb(252, 194, 5);
+}
+.input:focus{
+    border-bottom: 3px solid rgb(252, 194, 5);
+    outline: none;
+}
+button{
+    width: 450px;
+    height: 70px;
+    color: black;
+    font-size: 20px;
+    border:none;
+    border-radius:0px;
+    background-color:rgb(252, 194, 5);
+}
+input.check{
+    height: 30px;
+    width: 30px;
+}
+span{
+    color:white;
+    font-size: 30px;
+}
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }	
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  button.sign{
+    background: rgba(0, 0, 0, 0);
+    border:2px solid rgb(252, 194, 5);
+    color:rgb(252, 194, 5);
+  }
+  button.sign:hover{
+      background-color:rgb(252, 194, 5,0.1);
+  }
+  button.sign:focus{
+      outline: none;
+  }
+  footer{
+      background-color: rgb(31, 8, 8);
+      color: white;   
+      position: absolute;
+    }
+    img.foot{
+        background: rgba(0, 0, 0, 0);
+    }
+    img.imgt{
+        opacity: 0.8;  
+    }

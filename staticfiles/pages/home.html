@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+{%load static %}
+<link rel="stylesheet" href="{%static 'css/home.css'%}">
+<title>home</title>
+</head>
+<body>
+  <!-- homepage -->
+
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome My Work Site</h1>
+        <p class="lead">Amandeep Singh Pathania</p>
+        <p class="lead">1607211</p>
+        <hr class="my-4">
+        <p>Here You Find all my Work done in Internship</p>
+    </div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+       <!-- netguru page created with html and css only -->
+        <div class="col mb-4">
+          <div class="card shadow effect">         
+            
+   <a href="netguru/">  <img src="{% static 'img/netguru/netguru.png' %} " class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">NetGuru</h5>
+              <p class="card-text">This Page is created in purly html and css .And this is not resposive</p>
+            </div>
+          </div>
+        </div>
+         <!-- pubg page also with html and css -->
+        <div class="col mb-4">
+          <div class="card shadow effect">             
+        <a href="pubg/">  <img src="{%static 'img/pubg/pubgpic.jpg' %}" class="card-img-top" alt="..."> </a>
+            <div class="card-body">
+              <h5 class="card-title">Pubg Form</h5>
+              <p class="card-text">This Page is created in purly html and css .And this is not resposive</p>
+            </div>
+          </div>
+        </div>
+            <!-- about page also with html and css ,bootstrap -->
+        <div class="col mb-4">
+          <div class="card shadow effect">          
+         <a href="about/">  
+          {%load static %}
+          <img src="{% static 'img/about/aboutn.jpg' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">About</h5>
+              <p class="card-text">This was first assignmemnt of boot strap Given to us its for the portfolio purpose Youe can Set your profile in it</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card shadow effect">
+            <!-- calculator page with html and css ,js -->
+            
+          <a href="calculator/">  
+            {%load static %}
+            <img src="{%static 'img/calculator/calculatorq.jpg' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">This a Calculator you can perfrom calculation on it.It is made in html css and javascript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card shadow effect">
+            <!-- Json page  with html and css ,bootstrap ,js ,ajax -->
+            
+          <a href="Json/">  
+            {%load static %}
+            <img src="{%static 'img/Json/json_projecth.png' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">JSON PROJECT</h5>
+              <p class="card-text"><b>JSON PROJECT :</b>This was a Small project to Demonstrate the Exchange of data of internet we need to get data from a resp api and manipulate data Into a Table. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card shadow effect">
+            
+          <a href="CRUD/"> 
+            {%load static %}
+            <img src="{%static 'img/DataManagment/DataManagment.png' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">In Browser Data Management</h5>
+              <p class="card-text">This Page Store your Information and show it in table Without using any Database.Even after you refresh the page .</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

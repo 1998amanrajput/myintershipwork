@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>json</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    {%load static%}
+    <script src="{%static 'javascript/Json/josn.js'%}"></script>
+
+</head>
+<body class="text-center">  
+    <div class="jumbotron">
+        <h1 class="display-3">This is Json</h1>
+        <p class="lead">Json from server</p>
+        <hr class="my-2">
+    </div>
+    
+    <table id="table" class="table table-stripped">
+        <tr>
+            <td>id</td>
+            <td>emoplolyee name</td>
+            <td>emoplolyee salary</td>
+            <td>age</td>
+        </tr>
+    </table>
+    <button id="btn" onclick="showdata()" class="btn btn-primary">click me to show data</button>
+</body>
+</html>
