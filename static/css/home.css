@@ -1,8 +1,0 @@
-
-.effect{
-transition-property: scale();
-  transition-duration: 0.5s;
-}
-.effect:hover{
-    transform: scale(1.1);
-}
