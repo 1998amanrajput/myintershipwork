@@ -5,19 +5,22 @@ window.onload=function () {
     i = 0;
     j = 0;
     len = localStorage.length;
-    if (len == 0) return;
-    while (len !== 0) {
-        if (localStorage.getItem(j) != null) {
-            records[i] = JSON.parse(localStorage.getItem(j));
-            i++;
-            j++;
-            len--;
+    if (len == 0) id = 0;
+    else {
+        while (len !== 0) {
+            if (localStorage.getItem(j) != null) {
+                records[i] = JSON.parse(localStorage.getItem(j));
+                i++;
+                j++;
+                len--;
+            }
+            else {
+                j++;
+            }
         }
-        else {
-            j++;
-        }
+        id=i;
     }
-    id = i;
+    
     printRecords();
 
 }
@@ -59,7 +62,7 @@ $("#submit").click(function(){    //onsubmit
     }
     else{
         updateRecord(name, age, password, idToUpdate);
-        
+        loca
     }
     id++;
 });
