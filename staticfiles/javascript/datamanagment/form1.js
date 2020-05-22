@@ -62,7 +62,7 @@ $("#submit").click(function(){    //onsubmit
     }
     else{
         updateRecord(name, age, password, idToUpdate);
-        loca
+        
     }
     id++;
 });

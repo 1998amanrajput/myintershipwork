@@ -2,7 +2,7 @@ var records = [];
 var id; 
 var i, j;
 window.onload=function () {
-    console.log("scriptstarted");
+  
     i = 0;
     j = 0;
     len = localStorage.length;
@@ -63,7 +63,7 @@ $("#submit").click(function(){    //onsubmit
     }
     else{
         updateRecord(name, age, password, idToUpdate);
-        loca
+        
     }
     id++;
 });
