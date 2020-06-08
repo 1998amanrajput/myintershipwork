@@ -15,10 +15,6 @@ function showdata() {
 		document.getElementById("table").innerHTML+="<td>"+myobj.data[i].id+"</td>"+"<td>"+myobj.data[i].employee_name+"</td>"+"<td>"+myobj.data[i].employee_salary+"</td>"+"<td>"+myobj.data[i].employee_age+"</td>";
 		document.getElementById("table").innerHTML+="</tr>";
 	}
-	
-
-	
-	
 }
 function disableButton(){ 
 	var s=document.getElementById("btn");
